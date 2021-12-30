@@ -1,1 +1,1 @@
-# Racunarska-projekat
+# Racunarska-grafika-projekat
