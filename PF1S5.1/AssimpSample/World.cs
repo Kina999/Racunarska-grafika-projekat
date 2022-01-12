@@ -391,6 +391,7 @@ namespace AssimpSample
         {
             gl.TexEnv(OpenGL.GL_TEXTURE_ENV, OpenGL.GL_TEXTURE_ENV_MODE, OpenGL.GL_MODULATE);
             gl.PushMatrix();
+            gl.Normal(0.0f, 1.0f, 0.0f);
             gl.Color(0.4, 0.4, 0.4);
             Cube cube = new Cube();
 
@@ -530,11 +531,13 @@ namespace AssimpSample
             gl.Vertex(-30.0f, 0.0f, -8.0f);
             gl.End();
 
-            float[] light1pos = new float[] { 0.0f, 5.0f, 0.0f, 1.0f };
+            float[] light1pos = new float[] { 0.0f, 3.0f, 0.0f, 1.0f };
+            float[] light1pos1 = new float[] { 0.0f, -10.0f, 0.0f, 1.0f };
             float[] light1diffuse = new float[] { 0.6f, 0.6f, 0.6f, 1.0f };
             float[] light1specular = new float[] { 1f, 1f, 1f, 1.0f };
             gl.Light(OpenGL.GL_LIGHT1, OpenGL.GL_SPOT_CUTOFF, 45.0f);
-            gl.Light(OpenGL.GL_LIGHT1, OpenGL.GL_SPOT_DIRECTION, light1pos);
+            gl.Light(OpenGL.GL_LIGHT1, OpenGL.GL_POSITION, light1pos);
+            gl.Light(OpenGL.GL_LIGHT1, OpenGL.GL_SPOT_DIRECTION, light1pos1);
             gl.Light(OpenGL.GL_LIGHT1, OpenGL.GL_AMBIENT, ambijentalnaKomponentaReflektujucegIzvora);
             gl.Light(OpenGL.GL_LIGHT1, OpenGL.GL_DIFFUSE, light1diffuse);
             gl.Light(OpenGL.GL_LIGHT1, OpenGL.GL_SPECULAR, light1specular);

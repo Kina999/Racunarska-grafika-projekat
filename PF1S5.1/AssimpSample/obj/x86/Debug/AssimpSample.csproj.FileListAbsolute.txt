@@ -164,3 +164,31 @@ C:\Users\pc\Desktop\Racunarska grafika\Projekat\PF1S5.1\AssimpSample\bin\Debug\3
 C:\Users\pc\Desktop\Racunarska grafika\Projekat\PF1S5.1\AssimpSample\bin\Debug\3D Models\Barrel\barrel.3ds
 C:\Users\pc\Desktop\Racunarska grafika\Projekat\PF1S5.1\AssimpSample\bin\Debug\3D Models\Barrel\PlanksNe.jpg
 C:\Users\pc\Desktop\Racunarska grafika\Projekat\PF1S5.1\AssimpSample\bin\Debug\3D Models\Barrel\rust.jpg
+C:\Users\pc\Desktop\Racunarska grafika\Projekat\Racunarska-projekat\PF1S5.1\AssimpSample\bin\Debug\AssimpLib\Assimp32.dll
+C:\Users\pc\Desktop\Racunarska grafika\Projekat\Racunarska-projekat\PF1S5.1\AssimpSample\bin\Debug\AssimpLib\Assimp64.dll
+C:\Users\pc\Desktop\Racunarska grafika\Projekat\Racunarska-projekat\PF1S5.1\AssimpSample\bin\Debug\AssimpLib\AssimpNet.dll
+C:\Users\pc\Desktop\Racunarska grafika\Projekat\Racunarska-projekat\PF1S5.1\AssimpSample\bin\Debug\3D Models\Barrel\barrel.3ds
+C:\Users\pc\Desktop\Racunarska grafika\Projekat\Racunarska-projekat\PF1S5.1\AssimpSample\bin\Debug\3D Models\Touareg\Touareg.3DS
+C:\Users\pc\Desktop\Racunarska grafika\Projekat\Racunarska-projekat\PF1S5.1\AssimpSample\bin\Debug\3D Models\Truck\kamaz.3ds
+C:\Users\pc\Desktop\Racunarska grafika\Projekat\Racunarska-projekat\PF1S5.1\AssimpSample\bin\Debug\3D Models\Truck\veh_kama.png
+C:\Users\pc\Desktop\Racunarska grafika\Projekat\Racunarska-projekat\PF1S5.1\AssimpSample\bin\Debug\3D Models\Barrel\PlanksNe.jpg
+C:\Users\pc\Desktop\Racunarska grafika\Projekat\Racunarska-projekat\PF1S5.1\AssimpSample\bin\Debug\3D Models\Barrel\rust.jpg
+C:\Users\pc\Desktop\Racunarska grafika\Projekat\Racunarska-projekat\PF1S5.1\AssimpSample\bin\Debug\AssimpSample.exe.config
+C:\Users\pc\Desktop\Racunarska grafika\Projekat\Racunarska-projekat\PF1S5.1\AssimpSample\bin\Debug\AssimpSample.exe
+C:\Users\pc\Desktop\Racunarska grafika\Projekat\Racunarska-projekat\PF1S5.1\AssimpSample\bin\Debug\AssimpSample.pdb
+C:\Users\pc\Desktop\Racunarska grafika\Projekat\Racunarska-projekat\PF1S5.1\AssimpSample\bin\Debug\AssimpNet.dll
+C:\Users\pc\Desktop\Racunarska grafika\Projekat\Racunarska-projekat\PF1S5.1\AssimpSample\bin\Debug\SharpGL.dll
+C:\Users\pc\Desktop\Racunarska grafika\Projekat\Racunarska-projekat\PF1S5.1\AssimpSample\bin\Debug\SharpGL.SceneGraph.dll
+C:\Users\pc\Desktop\Racunarska grafika\Projekat\Racunarska-projekat\PF1S5.1\AssimpSample\bin\Debug\SharpGL.WPF.dll
+C:\Users\pc\Desktop\Racunarska grafika\Projekat\Racunarska-projekat\PF1S5.1\AssimpSample\obj\x86\Debug\AssimpSample.csproj.AssemblyReference.cache
+C:\Users\pc\Desktop\Racunarska grafika\Projekat\Racunarska-projekat\PF1S5.1\AssimpSample\obj\x86\Debug\MainWindow.baml
+C:\Users\pc\Desktop\Racunarska grafika\Projekat\Racunarska-projekat\PF1S5.1\AssimpSample\obj\x86\Debug\MainWindow.g.cs
+C:\Users\pc\Desktop\Racunarska grafika\Projekat\Racunarska-projekat\PF1S5.1\AssimpSample\obj\x86\Debug\App.g.cs
+C:\Users\pc\Desktop\Racunarska grafika\Projekat\Racunarska-projekat\PF1S5.1\AssimpSample\obj\x86\Debug\AssimpSample_Content.g.cs
+C:\Users\pc\Desktop\Racunarska grafika\Projekat\Racunarska-projekat\PF1S5.1\AssimpSample\obj\x86\Debug\AssimpSample_MarkupCompile.cache
+C:\Users\pc\Desktop\Racunarska grafika\Projekat\Racunarska-projekat\PF1S5.1\AssimpSample\obj\x86\Debug\AssimpSample.g.resources
+C:\Users\pc\Desktop\Racunarska grafika\Projekat\Racunarska-projekat\PF1S5.1\AssimpSample\obj\x86\Debug\AssimpSample.Properties.Resources.resources
+C:\Users\pc\Desktop\Racunarska grafika\Projekat\Racunarska-projekat\PF1S5.1\AssimpSample\obj\x86\Debug\AssimpSample.csproj.GenerateResource.cache
+C:\Users\pc\Desktop\Racunarska grafika\Projekat\Racunarska-projekat\PF1S5.1\AssimpSample\obj\x86\Debug\AssimpSample.csproj.CoreCompileInputs.cache
+C:\Users\pc\Desktop\Racunarska grafika\Projekat\Racunarska-projekat\PF1S5.1\AssimpSample\obj\x86\Debug\AssimpSample.exe
+C:\Users\pc\Desktop\Racunarska grafika\Projekat\Racunarska-projekat\PF1S5.1\AssimpSample\obj\x86\Debug\AssimpSample.pdb
