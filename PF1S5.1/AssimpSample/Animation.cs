@@ -33,7 +33,11 @@ namespace AssimpSample
             m_world.y_ramp_rot = 90;
             m_world.z_ramp_rot = 0;
 
-            mw.AnimationNotActive = false;
+            m_world.x_barrel_trans = 1f;
+            m_world.y_barrel_trans = 2f;
+            m_world.z_barrel_trans = -3f;
+
+        mw.AnimationNotActive = false;
             timer.Interval = TimeSpan.FromMilliseconds(20);
             timer.Tick += new EventHandler(StartAnimation);
             timer.Start();

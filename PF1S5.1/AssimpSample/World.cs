@@ -209,37 +209,48 @@ namespace AssimpSample
         #endregion Konstruktori
 
         #region Metode
-
-        public void SetupLighting(OpenGL gl)
+        public void DefineLighting(OpenGL gl)
         {
-            gl.Enable(OpenGL.GL_LIGHTING);
-            gl.Enable(OpenGL.GL_COLOR_MATERIAL);
-            gl.ColorMaterial(OpenGL.GL_FRONT, OpenGL.GL_AMBIENT_AND_DIFFUSE);
-
             float[] ambientColor = { 1f, 1f, 1f, 1.0f };
             float[] diffuseColor = { 1f, 1f, 1f, 1.0f }; //tackasti izvor bijele boje
 
             gl.Light(OpenGL.GL_LIGHT0, OpenGL.GL_AMBIENT, ambientColor);
             gl.Light(OpenGL.GL_LIGHT0, OpenGL.GL_DIFFUSE, diffuseColor);
 
-
-            gl.Enable(OpenGL.GL_LIGHT0);
-
-            float[] lightPosition = { 10.0f, 10.0f, -50.0f, 1.0f }; //gore desno izvor svjetlosti
+            float[] lightPosition = { 20.0f, 20.0f, 0.0f, 1.0f }; //gore desno izvor svjetlosti
 
             gl.Light(OpenGL.GL_LIGHT0, OpenGL.GL_POSITION, lightPosition);
+            gl.Light(OpenGL.GL_LIGHT1, OpenGL.GL_SPOT_CUTOFF, 180.0f);
 
-            /*float[] light1pos = new float[] { 0.0f, 5.0f, 5.0f, 1.0f };
-            float[] light1ambient = ambijentalnaKomponentaReflektujucegIzvora;
-            float[] light1diffuse = new float[] { 0.6f, 0.6f, 0.6f, 1.0f };
-            float[] light1specular = new float[] { 1f, 1f, 1f, 1.0f };
-            gl.Light(OpenGL.GL_LIGHT1, OpenGL.GL_SPOT_CUTOFF, 45.0f);
-            gl.Light(OpenGL.GL_LIGHT1, OpenGL.GL_SPOT_DIRECTION, light1pos);
-            gl.Light(OpenGL.GL_LIGHT1, OpenGL.GL_AMBIENT, light1ambient);
+        }
+        public void DefineGarageLighting(OpenGL gl)
+        {
+            float[] lightposition = new float[] { -25.0f, 10.0f, 5.0f, 1.0f };
+            float[] lightdirection = new float[] { -25f, -1.0f, 5.0f };
+            float[] light1diffuse = new float[] { 0.3f, 0.3f, 0.3f, 1.0f };
+            float[] light1specular = new float[] { 0.8f, 0.8f, 0.8f, 1.0f };
+            gl.Light(OpenGL.GL_LIGHT1, OpenGL.GL_POSITION, lightposition);
+            gl.Light(OpenGL.GL_LIGHT1, OpenGL.GL_AMBIENT, ambijentalnaKomponentaReflektujucegIzvora);
             gl.Light(OpenGL.GL_LIGHT1, OpenGL.GL_DIFFUSE, light1diffuse);
             gl.Light(OpenGL.GL_LIGHT1, OpenGL.GL_SPECULAR, light1specular);
+            gl.Light(OpenGL.GL_LIGHT1, OpenGL.GL_SPOT_DIRECTION, lightdirection);
+            gl.Light(OpenGL.GL_LIGHT1, OpenGL.GL_SPOT_CUTOFF, 45.0f);
+        }
 
-            gl.Enable(OpenGL.GL_LIGHT1);*/
+        public void SetupLighting(OpenGL gl)
+        {
+
+            DefineLighting(gl);
+            DefineGarageLighting(gl);
+            
+
+            gl.Enable(OpenGL.GL_LIGHTING); 
+            gl.Enable(OpenGL.GL_LIGHT0);
+            gl.Enable(OpenGL.GL_LIGHT1);
+
+            gl.Enable(OpenGL.GL_COLOR_MATERIAL);
+
+            gl.ColorMaterial(OpenGL.GL_FRONT, OpenGL.GL_AMBIENT_AND_DIFFUSE);
 
             gl.ShadeModel(OpenGL.GL_SMOOTH);
 
@@ -314,6 +325,9 @@ namespace AssimpSample
         public void Draw(OpenGL gl)
         {
             gl.Clear(OpenGL.GL_COLOR_BUFFER_BIT | OpenGL.GL_DEPTH_BUFFER_BIT);
+
+            DefineGarageLighting(gl);
+
             gl.LookAt(m_cameraX, m_cameraY, m_cameraZ, 0.0f, 0.0f, m_pointZ, 0.0f, 1.0f, 0.0f);
 
             gl.Translate(0, 0, m_sceneDistance);
@@ -495,8 +509,8 @@ namespace AssimpSample
             gl.Translate(x_ramp_trans, y_ramp_trans + rampHeight*2, z_ramp_trans);
             gl.Rotate(x_ramp_rot, y_ramp_rot, z_ramp_rot);
             Cylinder cylinder = new Cylinder();
-            cylinder.BaseRadius = 1;
-            cylinder.TopRadius = 1;
+            cylinder.BaseRadius = 0.5;
+            cylinder.TopRadius = 0.5;
             cylinder.Height = 6;
             cylinder.CreateInContext(gl);
             gl.Enable(OpenGL.GL_TEXTURE_2D);
@@ -520,7 +534,7 @@ namespace AssimpSample
             gl.Scale(50, 50, 50);
             
             gl.Normal(0.0f, 1.0f, 0.0f);
-
+            
             gl.TexCoord(0.0f, 0.0f);
             gl.Vertex(-30.0f, 0.0f, 15.0f);
             gl.TexCoord(0.0f, 1.0f);
@@ -530,21 +544,8 @@ namespace AssimpSample
             gl.TexCoord(1.0f, 0.0f);
             gl.Vertex(-30.0f, 0.0f, -8.0f);
             gl.End();
-
-            float[] light1pos = new float[] { 0.0f, 3.0f, 0.0f, 1.0f };
-            float[] light1pos1 = new float[] { 0.0f, -10.0f, 0.0f, 1.0f };
-            float[] light1diffuse = new float[] { 0.6f, 0.6f, 0.6f, 1.0f };
-            float[] light1specular = new float[] { 1f, 1f, 1f, 1.0f };
-            gl.Light(OpenGL.GL_LIGHT1, OpenGL.GL_SPOT_CUTOFF, 45.0f);
-            gl.Light(OpenGL.GL_LIGHT1, OpenGL.GL_POSITION, light1pos);
-            gl.Light(OpenGL.GL_LIGHT1, OpenGL.GL_SPOT_DIRECTION, light1pos1);
-            gl.Light(OpenGL.GL_LIGHT1, OpenGL.GL_AMBIENT, ambijentalnaKomponentaReflektujucegIzvora);
-            gl.Light(OpenGL.GL_LIGHT1, OpenGL.GL_DIFFUSE, light1diffuse);
-            gl.Light(OpenGL.GL_LIGHT1, OpenGL.GL_SPECULAR, light1specular);
-
-            gl.Enable(OpenGL.GL_LIGHT1);
-
             gl.PopMatrix();
+            
             gl.MatrixMode(OpenGL.GL_MODELVIEW);
             gl.Disable(OpenGL.GL_TEXTURE_2D);
             gl.Flush();
